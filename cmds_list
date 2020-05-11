@@ -1,65 +1,24 @@
-    1  sudo yum update
-    2  sudo yum install maven
-    3  mvn --version
-    4  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-    5  sudo su
-    6  java -version
-    7  mvn --version
-    8  service jenkins start
-    9  sudo service jenkins start
-   10  sudo service jenkins start
-   11  cat /var/lib/jenkins/secrets/initialAdminPassword
-   12  sudo su
-   13  git clone https://github.com/vijayakaranki/list_git_cmds
-   14  git --version
-   15  sudo yum install git
-   16  git --version
-   17  git clone https://github.com/vijayakaranki/list_git_cmds
-   18  ls
-   19  cd list_git_cmds/
-   20  touch file1 file2
-   21  ls
-   22  history > file1
-   23  git status
-   24  git add -A
-   25  git status
-   26  git commit -m "history of commands added to file1"
-   27  git config --global user.name "Vijaya Karanki"
-   28  git config --global user.email "vijaya.karanki@gmail.com"
-   29  git status
-   30  git branch
-   31  git branch Maven_Cmds
-   32  git branch
-   33  git branch Maven_Cmds 
-   34  git checkout Maven_Cmds 
-   35  git branch
-   36  touch cmds_list
-   37  cat > cmds_list
-   38  git status
-   39  git add cmds_list 
-   40  git status
-   41  git commit -m "maven installation guide added"
-   42  git push -u origin cmds_list
-   43  git push -u origin master
-   44  git pull cmds_list
-   45  git branch
-   46  ls
-   47  cat cmds_list
-   48  cat > $git_cmds
-   49  touch git_cmds
-   50  ls
-   51  cat > git_cmds 
-   52  git status
-   53  git add git_cmds 
-   54  git status
-   55  git log
-   56  git commit -m "changes made"
-   57  git push -u origin Maven_Cmds 
-   58  cd
-   59  ls
-   60  git pull list_git_cmds/
-   61  history
-   62  cd l
-   63  cd list_git_cmds/
-   64  ls
-   65  history > cmds_list 
+*****jenkins installation commands*****
+1.wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+2.rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.repo
+3.yum install jenkins
+4.sudo service jenkins start
+# jenkins admin password location: /var/lib/jenkins/secrets/initialAdminPassword
+******Git Commands******
+1.yum install git
+2.git --version
+#setting up username and email for git
+ git config --global user.name "name comes here"
+ git config --global user.email "email id comes here"
+#central repository cloning
+ git clone <github repository url>
+#creating,editing,commit and pushing files to central repo
+$cd <repo name>
+$touch file1 file2
+$cat >file1 ----->adding stuff to file1
+$git status----->checking file status
+$git add -A/<file name>/. ------->updating files
+$git branch ----->checking in which branch we are currently in
+$git checkout <branch/master> ------>shifting to master or branch
+$git commit -m "changes done"---->commit the changes
+$git push -u origin <master/branch> ------>pushing files to repo
