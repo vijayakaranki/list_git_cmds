@@ -1,0 +1,9 @@
+1.git clone <url>
+2.git status
+3.git add -A
+4.git commit -m "changes"
+5.git log
+6.git push -u origin <master/branch name>
+7.git branch
+8.git checkout master/branch name
+9.git pull <repo>
