@@ -1,0 +1,22 @@
+    1  sudo yum update
+    2  sudo yum install maven
+    3  mvn --version
+    4  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    5  sudo su
+    6  java -version
+    7  mvn --version
+    8  service jenkins start
+    9  sudo service jenkins start
+   10  sudo service jenkins start
+   11  cat /var/lib/jenkins/secrets/initialAdminPassword
+   12  sudo su
+   13  git clone https://github.com/vijayakaranki/list_git_cmds
+   14  git --version
+   15  sudo yum install git
+   16  git --version
+   17  git clone https://github.com/vijayakaranki/list_git_cmds
+   18  ls
+   19  cd list_git_cmds/
+   20  touch file1 file2
+   21  ls
+   22  history > file1
