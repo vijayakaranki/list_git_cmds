@@ -1,0 +1,8 @@
+wget <URL>
+#extract tar file
+#move extracted file to local directory
+#edit bash file by adding the path
+export M2=/usr/local/apache-maven/bin
+export PATH=$M2:$PATH # appending maven location to path
+source bashrc file to execute
+verify the version by mvn --version command
